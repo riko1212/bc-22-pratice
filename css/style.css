@@ -55,22 +55,42 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+.header-a.current {
+  position: relative;
+}
+
+.header-a.current::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  bottom: 0px;
+  left: 0;
+}
+
 .header {
-  background-color: grey;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 }
 .header-list {
   display: flex;
   justify-content: flex-end;
 }
-.header-item {
+/* .header-item {
   margin-left: 40px;
 }
 .header-item:first-child {
   margin-left: 0;
-}
+} */
 .hero {
-  padding-top: 220px;
+  padding-top: 320px;
   padding-bottom: 335px;
 
   background-color: var(--main-title-color);
@@ -80,6 +100,9 @@ body {
       rgba(0, 0, 0, 0.2)
     ),
     url(../images/hero-bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 500;
@@ -176,6 +199,7 @@ body {
   justify-content: center;
   flex-shrink: 0;
   margin-right: 17px;
+  transition: border-color 500ms;
 }
 
 .circle-out:hover {
@@ -195,6 +219,7 @@ body {
   align-items: center;
   justify-content: center;
   fill: var(--accent-color);
+  transition: border 500ms, background-color 500ms, fill 500ms;
 }
 
 .circle-out:hover .circle-in {
@@ -205,6 +230,7 @@ body {
 
 .mobile-item-content {
   padding-top: 46px;
+  transition: background-color 500ms;
 }
 
 .standarts {
@@ -391,4 +417,46 @@ body {
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   margin: 0 auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(50, 50, 50, 0.303);
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  min-height: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.modal-open-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

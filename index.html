@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>it-studio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" / >
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +27,7 @@
               <a class="header-a link" href="">Главная</a>
             </li>
             <li class="header-item">
-              <a class="header-a link" href="">Наши проекты</a>
+              <a class="header-a link current" href="">Наши проекты</a>
             </li>
             <li class="header-item">
               <a class="header-a link" href="">Услуги</a>
@@ -52,7 +49,9 @@
           <p class="hero-text">
             Мы создаем легкие решения сложных задач и проблем
           </p>
-          <button type="button" class="hero-btn">Наши проекты</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Наши проекты
+          </button>
         </div>
       </section>
 
@@ -333,5 +332,11 @@
 
       <p>(с) 2019. Все права защищены.</p>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-open-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
