@@ -1,0 +1,32 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  min-height: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.modal-open-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

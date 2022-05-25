@@ -15,28 +15,29 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav-container">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-a link" href="">Главная</a>
+        <nav class="nav">
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="">Главная</a>
             </li>
-            <li class="header-item">
-              <a class="header-a link current" href="">Наши проекты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link link current" href="">Наши проекты</a>
             </li>
-            <li class="header-item">
-              <a class="header-a link" href="">Услуги</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="">Услуги</a>
             </li>
-            <li class="header-item">
-              <a class="header-a link" href="">Новости</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="">Новости</a>
             </li>
-            <li class="header-item">
-              <a class="header-a link" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -45,11 +46,11 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Передовая ІТ студия</h1>
-          <p class="hero-text">
+          <h1 class="hero__title">Передовая ІТ студия</h1>
+          <p class="hero__text">
             Мы создаем легкие решения сложных задач и проблем
           </p>
-          <button type="button" class="hero-btn" data-modal-open>
+          <button type="button" class="hero__btn btn" data-modal-open>
             Наши проекты
           </button>
         </div>
@@ -57,65 +58,65 @@
 
       <section class="mobile">
         <div class="container">
-          <h2 class="mobile-title">
+          <h2 class="mobile__title">
             Мы создаем мобильные приложения для крупных корпораций
           </h2>
-          <p class="mobile-text">
+          <p class="mobile__text">
             Lorem Ipsum - это текст-"рыба", часто используемый в печати и
             вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
             латинице с начала XVI века.
           </p>
-          <ul class="list mobile-list">
-            <li class="mobile-item">
-              <div class="circle-out">
-                <div class="circle-in">
-                  <svg class="mobile-icon" width="40" height="40">
+          <ul class="list mobile__list circle-list">
+            <li class="circle-list__item">
+              <div class="circle-list__circle-out">
+                <div class="circle-list__circle-in">
+                  <svg class="circle-list__icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-project"></use>
                   </svg>
                 </div>
               </div>
-              <div class="mobile-item-content">
-                <h3 class="mobile-item-title">Создание сайтов</h3>
-                <p class="mobile-item-text">
+              <div class="circle-list__item-content">
+                <h3 class="circle-list__item-title">Создание сайтов</h3>
+                <p class="circle-list__item-text">
                   Lorem Ipsum - это текст- "рыба", часто используе в печати и
                   вэб-дизайне.
                 </p>
               </div>
             </li>
-            <li class="mobile-item">
-              <div class="circle-out">
-                <div class="circle-in">
-                  <svg class="mobile-icon" width="40" height="40">
+            <li class="circle-list__item">
+              <div class="circle-list__circle-out">
+                <div class="circle-list__circle-in">
+                  <svg class="circle-list__icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-project"></use>
                   </svg>
                 </div>
               </div>
-              <div class="mobile-item-content">
-                <h3 class="mobile-item-title">Создание сайтов</h3>
-                <p class="mobile-item-text">
+              <div class="circle-list__item-content">
+                <h3 class="circle-list__item-title">Создание сайтов</h3>
+                <p class="circle-list__item-text">
                   Lorem Ipsum - это текст- "рыба", часто используе в печати и
                   вэб-дизайне.
                 </p>
               </div>
             </li>
-            <li class="mobile-item">
-              <div class="circle-out">
-                <div class="circle-in">
-                  <svg class="mobile-icon" width="40" height="40">
+            <li class="circle-list__item">
+              <div class="circle-list__circle-out">
+                <div class="circle-list__circle-in">
+                  <svg class="circle-list__icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-project"></use>
                   </svg>
                 </div>
               </div>
-              <div class="mobile-item-content">
-                <h3 class="mobile-item-title">Создание сайтов</h3>
-                <p class="mobile-item-text">
+              <div class="circle-list__item-content">
+                <h3 class="circle-list__item-title">Создание сайтов</h3>
+                <p class="circle-list__item-text">
                   Lorem Ipsum - это текст- "рыба", часто используе в печати и
                   вэб-дизайне.
                 </p>
               </div>
             </li>
           </ul>
-          <button class="hero-btn btn" type="button">Все услуги</button>
+          <button class="mobile__btn btn" type="button">Все услуги</button>
         </div>
       </section>
       <!-- про нас -->
@@ -123,86 +124,94 @@
         <div class="container">
           <div class="standarts-top">
             <div class="standarts-content">
-              <h2 class="standarts-title">Высокие стандарты разработки</h2>
-              <p class="standarts-text">
+              <h2 class="standarts-content__title">
+                Высокие стандарты разработки
+              </h2>
+              <p class="standarts-content__text">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                 текстов на латинице с начала XVI века. стандартной "рыбой" для
                 текстов на латинице с начала XVI века.
               </p>
-              <a class="standarts-link" href="">Подробнее о компании</a>
+              <a class="standarts-content__link" href=""
+                >Подробнее о компании</a
+              >
             </div>
             <img src="./images/about-image.png" alt="рабочий стол" />
           </div>
 
-          <ul class="standarts-list list">
-            <li class="standarts-list-item">
-              <span class="standarts-item-calc">125</span>
-              <p class="standarts-item-text" lang="en">Our projects</p>
+          <ul class="digit-list list">
+            <li class="digit-list__item">
+              <span class="digit-list__item-calc">125</span>
+              <p class="digit-list__text" lang="en">Our projects</p>
             </li>
-            <li class="standarts-list-item">
-              <span class="standarts-item-calc">125</span>
-              <p class="standarts-item-text" lang="en">Our projects</p>
+            <li class="digit-list__item">
+              <span class="digit-list__item-calc">125</span>
+              <p class="digit-list__text" lang="en">Our projects</p>
             </li>
-            <li class="standarts-list-item">
-              <span class="standarts-item-calc">125</span>
-              <p class="standarts-item-text" lang="en">Our projects</p>
+            <li class="digit-list__item">
+              <span class="digit-list__item-calc">125</span>
+              <p class="digit-list__text" lang="en">Our projects</p>
             </li>
-            <li class="standarts-list-item">
-              <span class="standarts-item-calc">125</span>
-              <p class="standarts-item-text" lang="en">Our projects</p>
+            <li class="digit-list__item">
+              <span class="digit-list__item-calc">125</span>
+              <p class="digit-list__text" lang="en">Our projects</p>
             </li>
-            <li class="standarts-list-item">
-              <span class="standarts-item-calc">125</span>
-              <p class="standarts-item-text" lang="en">Our projects</p>
+            <li class="digit-list__item">
+              <span class="digit-list__item-calc">125</span>
+              <p class="digit-list__text" lang="en">Our projects</p>
             </li>
           </ul>
         </div>
       </section>
       <section class="works">
         <div class="container">
-          <div class="works-head">
-            <h2 class="works-title">
+          <div class="works__head">
+            <h2 class="works__title">
               Наши работы, на которых мы специализируемся
             </h2>
-            <button class="works-btn" type="button">Все услуги</button>
+            <button class="btn" type="button">Все услуги</button>
           </div>
-          <ul class="works-list list">
-            <li class="works-item">
+          <ul class="card-list list">
+            <li class="card-list__item">
               <img src="./images/works.png" alt="works prossesing" />
-              <h3 class="works-item-title">
-                <span class="numbers">01.</span> Исследование и упаковка
+              <h3 class="card-list__item-title">
+                <span class="card-list__numbers">01.</span> Исследование и
+                упаковка
               </h3>
-              <p class="works-item-text">
+              <p class="card-list__item-text">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                 текстов на латинице с начала XVI века.
               </p>
-              <a href="" class="works-item-link">Подробнее</a>
+              <a href="" class="card-list__item-link">Подробнее</a>
             </li>
-            <li class="works-item">
+            <li class="card-list__item">
               <img src="./images/works.png" alt="works prossesing" />
-              <h3 class="works-item-title">
-                <span class="numbers">01.</span> Исследование и упаковка
+              <h3 class="card-list__item-title">
+                <span class="card-list__numbers">01.</span> Исследование и
+                упаковка
               </h3>
-              <p class="works-item-text">
+              <p class="card-list__item-text">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                 текстов на латинице с начала XVI века.
               </p>
-              <a href="" class="works-item-link">Подробнее</a>
+              <a href="" class="card-list__item-link">Подробнее</a>
             </li>
-            <li class="works-item">
+
+            <li class="card-list__item">
               <img src="./images/works.png" alt="works prossesing" />
-              <h3 class="works-item-title">
-                <span class="numbers">01.</span> Исследование и упаковка
+              <h3 class="card-list__item-title">
+                <span class="card-list__numbers">01.</span> Исследование и
+                упаковка
               </h3>
-              <p class="works-item-text">
+              <p class="card-list__item-text">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                 текстов на латинице с начала XVI века.
               </p>
-              <a href="" class="works-item-link">Подробнее</a>
+              <a href="" class="card-list__item-link">Подробнее</a>
             </li>
           </ul>
         </div>
@@ -210,27 +219,27 @@
 
       <section class="projects">
         <div class="container">
-          <h2 class="projects-title">Наши проекты</h2>
-          <p class="projects-text">
+          <h2 class="projects__title">Наши проекты</h2>
+          <p class="projects__text">
             Lorem Ipsum - это текст-"рыба", часто используемый в печати и
             вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
             латинице с начала XVI века.
           </p>
-          <ul class="list projects-list">
-            <li class="projects-item">
+          <ul class="list picture-list">
+            <li class="picture-list__item">
               <img src="./images/our-projects.png" alt="код" />
             </li>
-            <li class="projects-item">
+            <li class="picture-list__item">
               <img src="./images/our-projects.png" alt="код" />
             </li>
-            <li class="projects-item">
+            <li class="picture-list__item">
               <img src="./images/our-projects.png" alt="код" />
             </li>
-            <li class="projects-item">
+            <li class="picture-list__item">
               <img src="./images/our-projects.png" alt="код" />
             </li>
           </ul>
-          <button class="projects-btn" type="button">Все проекты</button>
+          <button class="projects__btn btn" type="button">Все проекты</button>
         </div>
       </section>
       <section>
